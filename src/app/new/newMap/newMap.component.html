@@ -1,0 +1,15 @@
+<button (click)="openModal()">Toggle Submap Modal </button>
+
+<div class="diagramsPanel" id =diagramDiv style="height: 1000px;">
+    <div #diagramDiv class="diagramDiv" style="height: 1000px;" ></div>
+</div>
+
+
+<div id="submapModal" class="smModal" style="display: none; position: fixed; z-index: 999999; padding-top: 100px; left: 0;top: 0;width: 80%;height: 80%;">
+    <div class="smModal-content">
+        <span class="close" (click)="modalSpanClose()">&times;</span>
+
+        <molecular-strategy-container>
+        </molecular-strategy-container>
+    </div>
+</div>

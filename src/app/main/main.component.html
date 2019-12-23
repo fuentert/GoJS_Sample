@@ -1,0 +1,10 @@
+<div id = "test-content" class = "test-content">
+  <button (click)="changeView()">Toggle Main Map and SubMap </button>
+    <new-map-container *ngIf="view === 'circle'"
+                       [mapdata]="mapdata">
+    </new-map-container>
+
+    <molecular-strategy-container *ngIf="view === 'flow'"
+                       [mapdata]="mapdata">
+    </molecular-strategy-container>
+</div>
